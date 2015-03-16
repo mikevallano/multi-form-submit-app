@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MultiFormAppTest</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= link_to "add new user", new_user_path %> |
+  <%= link_to "all users", users_path %> |
+   <%= link_to "all tasks", tasks_path %> |
+  <%= link_to "add new task", new_task_path %>
+
+<%= yield %>
+
+</body>
+</html>
